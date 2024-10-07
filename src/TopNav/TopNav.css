@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+.TN {
+  position: fixed;
+  top: 0;
+  height: 2.5rem;
+  width: 100%;
+  background-color: #00a69c;
+  border-bottom: 2px solid snow;
+  z-index: 1;
+}
+
+.TN_sub {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  height: 2.5rem;
+}
+
+.TN_left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.TN_left strong {
+  color: white;
+}
+
+img {
+  width: 12px;
+  height: 12px;
+}
+
+.img1 {
+  margin-bottom: 15px;
+}
+
+.img2 {
+  transform: scaleX(-1);
+  margin-bottom: 15px;
+}
+
+.Menu {
+  width: 48px;
+  height: 48px;
+}
+
+strong {
+  margin-right: 15px;
+  font-size: 30px;
+}
+
+strong:hover,
+.top_p:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+  cursor: pointer;
+  /* color: black; */
+}
+
+.TN_right {
+  display: flex;
+  flex-direction: row;
+}
+
+.top_p {
+  font-family: 'Poetsen One', sans-serif;
+  margin-right: 10px;
+}
+
+.imgp {
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+@media (max-width: 690px) {
+  .TN_left strong {
+    font-size: 16px;
+  }
+
+  .top_p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 468px) {
+  .TN_left strong {
+    font-size: 13px;
+  }
+
+  .top_p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 391px) {
+  .TN_left strong {
+    font-size: 11px;
+  }
+
+  .top_p {
+    font-size: 9px;
+  }
+}
