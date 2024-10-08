@@ -1,4 +1,4 @@
-import './TopNav.css';
+import css from '../style/TopNav.module.css';
 
 export default function TopNav() {
   //화면 전환용
@@ -10,31 +10,31 @@ export default function TopNav() {
       window.scrollTo({top: element.offsetTop + -90, behavior: 'smooth'});
     } //중단 (스킬 페이지)
     else if (element && pageId === 'SkillPage') {
-      window.scrollTo({top: element.offsetTop + -10, behavior: 'smooth'});
+      window.scrollTo({top: element.offsetTop + -70, behavior: 'smooth'});
     }
     //프로젝트 부분
     else if (element && pageId === 'ProjectPage') {
-      window.scrollTo({top: element.offsetTop + -50, behavior: 'smooth'});
+      window.scrollTo({top: element.offsetTop + -90, behavior: 'smooth'});
     }
   };
 
   return (
-    <div className="TN">
-      <div className="TN_sub">
-        <div className="TN_left">
+    <div className={css.TN}>
+      <div className={css.TN_sub}>
+        <div className={css.TN_left}>
           <strong onClick={() => scrollPage('ProfilePage')}>
             집요한 개발자 "김남빈"
           </strong>
         </div>
 
-        <div className="TN_right">
-          <p className="top_p" onClick={() => scrollPage('ProfilePage')}>
+        <div className={css.TN_right}>
+          <p className={css.top_p} onClick={() => scrollPage('ProfilePage')}>
             PROFILE
           </p>
-          <p className="top_p" onClick={() => scrollPage('SkillPage')}>
+          <p className={css.top_p} onClick={() => scrollPage('SkillPage')}>
             SKILLS
           </p>
-          <p className="top_p" onClick={() => scrollPage('ProjectPage')}>
+          <p className={css.top_p} onClick={() => scrollPage('ProjectPage')}>
             PROJECT
           </p>
         </div>
