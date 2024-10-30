@@ -1,15 +1,19 @@
-import TopNav from './TopNav/TopNav';
-import Profile from './Profile/Profile';
-import Skill from './Skills/Skill';
-import Project from './Project/Project';
+import {Suspense, lazy} from 'react';
+
+const TopNav = lazy(() => import('./TopNav/TopNav'));
+const Profile = lazy(() => import('./Profile/Profile'));
+const Skill = lazy(() => import('./Skills/Skill'));
+const Project = lazy(() => import('./Project/Project'));
 
 function App() {
   return (
     <>
-      <TopNav />
-      <Profile />
-      <Skill />
-      <Project />
+      <Suspense fallback={<div>⌛Loading...</div>}>
+        <TopNav />
+        <Profile />
+        <Skill />
+        <Project />
+      </Suspense>
     </>
   );
 }

@@ -43,12 +43,13 @@ export default function Project() {
               <img
                 className={`${css.show_project_img} ${
                   show_project.title === '끄적임' ||
-                  show_project.title === '이상형 월드컵'
+                  show_project.title === '나의 포트폴리오'
                     ? css.끄적임이미지
                     : show_project.title === '밴러지'
                     ? css.밴러지이미지
                     : css.모바일이미지
                 }`}
+                loading="lazy"
                 src={show_project.image}
                 alt={show_project.title}
               />
@@ -71,11 +72,11 @@ export default function Project() {
               <p className={css.showData_p}>📍개발기간</p>{' '}
               <p className={css.showData_p2}>{show_project.period}</p>
             </div>
-            <div className={css.right}>
+            {/* <div className={css.right}>
               {' '}
               <p className={css.showData_p}>📍플랫폼</p>{' '}
               <p className={css.showData_p2}>{show_project.platform}</p>
-            </div>
+            </div> */}
             <div className={css.right}>
               {' '}
               <p className={css.showData_p}>📍개발인원</p>{' '}
@@ -95,6 +96,7 @@ export default function Project() {
                   onClick={() => window.open(show_project.git, '_blank')}
                   alt="깃허브"
                   src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  loading="lazy"
                 />
               </div>
             </div>

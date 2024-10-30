@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 70%;
-  /* height: 100vh; */
+  /* height: 100%; */
   align-items: center;
   justify-content: center;
   background-color: white;
@@ -34,7 +34,7 @@
 
 h4 {
   text-align: center;
-  font-family: 'Jua', sans-serif;
+  /* font-family: 'Jua', sans-serif; */
   margin-right: 40px;
   color: #212529;
   transition: text-decoration 0.3s, font-weight 0.3s;
@@ -60,9 +60,9 @@ h4:hover {
   display: flex;
   flex-direction: row;
   width: 80%;
+  /* height: 100vh; */
   align-items: center;
   justify-content: center;
-  /* margin-top: 40px; */
 }
 
 .pj_mid_left {
@@ -124,7 +124,7 @@ h4:hover {
 
 .끄적임이미지 {
   width: 90%;
-  height: 70%;
+  height: 60%;
   margin: 0 auto;
   display: block;
 }
@@ -168,14 +168,14 @@ h4:hover {
 }
 
 .showData_p3 {
-  font-size: 12px;
+  font-size: 13px;
   width: 100%;
   color: blue;
   border-radius: 15px;
 }
 
 .showData_p4 {
-  font-size: 12px;
+  font-size: 14.5px;
   width: 100%;
   margin-bottom: 5px;
   text-align: left;
@@ -229,7 +229,7 @@ h4:hover {
 @media (max-width: 700px) {
   h4 {
     text-align: center;
-    font-family: 'Jua', sans-serif;
+    /* font-family: 'Jua', sans-serif; */
     margin-right: 20px;
     color: #212529;
     transition: text-decoration 0.3s, font-weight 0.3s;
@@ -253,7 +253,7 @@ h4:hover {
 
   h4 {
     text-align: center;
-    font-family: 'Jua', sans-serif;
+    /* font-family: 'Jua', sans-serif; */
     margin-right: 14px;
     color: #212529;
     transition: text-decoration 0.3s, font-weight 0.3s;

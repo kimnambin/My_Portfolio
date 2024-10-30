@@ -113,7 +113,7 @@
 
 @media (max-width: 510px) and (min-width: 360px) {
   .full_skill {
-    width: 85%;
+    width: 100%;
   }
 
   .title_h2 {

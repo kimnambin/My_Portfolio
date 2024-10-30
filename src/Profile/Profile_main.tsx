@@ -39,22 +39,27 @@ export default function Profile_main() {
           </article>
         </section>
       </a>
+      <a
+        href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003075378"
+        target="_blank"
+        rel="noopener noreferrer">
+        <section className="section">
+          <article className="article_left">
+            <FaPen className="icons" />
+          </article>
+          <article className="article_right">
+            <span>논문</span>
+            <p>KCI 논문 게재</p>
+          </article>
+        </section>
+      </a>
       <section className="section00">
         <article className="article_left">
           <MdOutlineMail className="icons" />
         </article>
         <article className="article_right">
           <span>이메일</span>
-          <p>mkkim044@naver.com</p>
-        </article>
-      </section>
-      <section className="section00">
-        <article className="article_left">
-          <IoIosPhonePortrait className="icons" />
-        </article>
-        <article className="article_right">
-          <span>연락처</span>
-          <p>010-9666-7750</p>
+          <p className="email">mkkim044@naver.com</p>
         </article>
       </section>
       <a
@@ -71,20 +76,15 @@ export default function Profile_main() {
           </article>
         </section>
       </a>
-      <a
-        href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003075378"
-        target="_blank"
-        rel="noopener noreferrer">
-        <section className="section">
-          <article className="article_left">
-            <FaPen className="icons" />
-          </article>
-          <article className="article_right">
-            <span>논문</span>
-            <p>KCI 논문 게재</p>
-          </article>
-        </section>
-      </a>
+      <section className="section00">
+        <article className="article_left">
+          <IoIosPhonePortrait className="icons" />
+        </article>
+        <article className="article_right">
+          <span>연락처</span>
+          <p className="email">010-9666-7750</p>
+        </article>
+      </section>
     </main>
   );
 }
