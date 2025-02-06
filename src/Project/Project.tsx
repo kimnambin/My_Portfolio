@@ -7,7 +7,7 @@ export default function Project() {
   const [project_array] = Project_data(); // Call the function to get project_data
 
   //프로젝트 초기값
-  const [firstTitle, setFirstTitle] = useState('끄적임');
+  const [firstTitle, setFirstTitle] = useState('코난위키');
   // 프로젝트 클릭
   const clickTitle = (title: React.SetStateAction<string>) => {
     setFirstTitle(title);
@@ -38,11 +38,21 @@ export default function Project() {
           {show_project ? (
             <div className={css.pj_mid_left}>
               <h2 className={css.show_project_title}>
-                {show_project.title == '밴러지' ? '' : show_project.title}
+                {show_project.link !== '' ? (
+                  <a
+                    href={show_project.link}
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    🌐보러가기
+                  </a>
+                ) : (
+                  show_project.title
+                )}
               </h2>
               <img
                 className={`${css.show_project_img} ${
                   show_project.title === '끄적임' ||
+                  show_project.title === '코난위키' ||
                   show_project.title === '나의 포트폴리오'
                     ? css.끄적임이미지
                     : show_project.title === '밴러지'

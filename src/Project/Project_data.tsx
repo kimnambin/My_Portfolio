@@ -9,10 +9,28 @@ export interface Project {
   role: string[];
   skill: string;
   git: string;
+  link: string;
 }
 
 export default function Project_data(): [Project[]] {
   const project_array: Project[] = [
+    {
+      title: '코난위키',
+      image: './image/코난메인.png',
+      review: 'Redux를 배우고 나서 만든 개인 프로젝트입니다.',
+      intro: '명탐정 코난을 소개하는 위키',
+      period: '2024.12~2025.01 (1개월)',
+      platform: 'https://kimnambin.github.io/conanwiki/',
+      personnel: '1명',
+      role: [
+        'Redux를 통한 상태 관리',
+        'TypeScript를 적용시키는 코드 리팩토링',
+        'SEO 최적화를 위한 meta 태그 적용 및 Google Search Console 설정',
+      ],
+      skill: 'TypeScript ,React ,Bootstrap ,Redux ',
+      git: 'https://github.com/kimnambin/conanwiki',
+      link: 'https://kimnambin.github.io/conanwiki/',
+    },
     {
       title: '끄적임',
       image: './image/끄적임.webp',
@@ -30,6 +48,7 @@ export default function Project_data(): [Project[]] {
       ],
       skill: 'JavaScript , CSS, React , Java , Spring , Mysql',
       git: 'https://github.com/kimnambin/hackathon_team3_front',
+      link: 'https://team3.sku-sku.com/',
     },
 
     {
@@ -50,6 +69,7 @@ export default function Project_data(): [Project[]] {
       ],
       skill: 'Flutter ,Dart ,Python ,Sqlite ,Flask',
       git: 'https://github.com/kimnambin/banergy',
+      link: '',
     },
     {
       title: '나의 포트폴리오',
@@ -67,25 +87,26 @@ export default function Project_data(): [Project[]] {
       ],
       skill: 'TypeScript, JavaScript , React',
       git: 'https://github.com/kimnambin/My_Portfolio',
+      link: 'https://kimnambin.github.io/My_Portfolio/',
     },
-    {
-      title: '노드스타그램',
-      image: './image/노드스타그램.webp',
-      review:
-        'NodeJs 공부를 위해 인스타그램을 클론코딩\n이때 처럼으로 MongoDB를 사용해보았습니다.',
-      intro: 'NodeJS를 이용한 인스타그램 클론코딩',
-      period: '2024.02~2024.05 (3개월)',
-      platform: 'WEB',
-      personnel: '1명',
-      role: [
-        '전체적인 화면 구현',
-        '로그인/회원가입 구현',
-        'MongoDB 이용한 게시글/스토리 업로드',
-        'Socket.io를 이용한 간단한 채팅 기능',
-      ],
-      skill: 'HTML/CSS, JavaScript \nNodeJS, MongoDB ',
-      git: 'https://github.com/kimnambin/nodestagram',
-    },
+    // {
+    //   title: '노드스타그램',
+    //   image: './image/노드스타그램.webp',
+    //   review:
+    //     'NodeJs 공부를 위해 인스타그램을 클론코딩\n이때 처럼으로 MongoDB를 사용해보았습니다.',
+    //   intro: 'NodeJS를 이용한 인스타그램 클론코딩',
+    //   period: '2024.02~2024.05 (3개월)',
+    //   platform: 'WEB',
+    //   personnel: '1명',
+    //   role: [
+    //     '전체적인 화면 구현',
+    //     '로그인/회원가입 구현',
+    //     'MongoDB 이용한 게시글/스토리 업로드',
+    //     'Socket.io를 이용한 간단한 채팅 기능',
+    //   ],
+    //   skill: 'HTML/CSS, JavaScript \nNodeJS, MongoDB ',
+    //   git: 'https://github.com/kimnambin/nodestagram',
+    // },
   ];
   return [project_array];
 }
