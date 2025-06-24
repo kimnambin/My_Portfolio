@@ -1,6 +1,6 @@
 import '../style/Profile.css';
-import Profile_main from './Profile_main';
-import Profile_footer from './Profile_footer';
+import Profile_main from '../components/profile/Profile_main';
+import Profile_footer from '../components/profile/Profile_footer';
 
 export default function Profile() {
   return (

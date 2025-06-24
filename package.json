@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "esbuild": "^0.25.5",
     "gh-pages": "^6.1.1",
     "icons": "^1.0.0",
     "react": "^18.3.1",
@@ -30,7 +31,7 @@
     "globals": "^15.9.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
+    "vite": "^6.3.5"
   },
   "homepage": "https://github.com/kimnambin.github.io/My_Portfolio/"
 }

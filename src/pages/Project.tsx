@@ -1,28 +1,26 @@
 import {useState} from 'react';
-import Project_data from './Project_data';
 import React from 'react';
 import css from '../style/Project.module.css';
+import {ProjectType} from '../type/project.model';
+import {projectData} from '../data/Project_data';
 
 export default function Project() {
-  const [project_array] = Project_data(); // Call the function to get project_data
-
-  //프로젝트 초기값
   const [firstTitle, setFirstTitle] = useState('코난위키');
-  // 프로젝트 클릭
+
   const clickTitle = (title: React.SetStateAction<string>) => {
     setFirstTitle(title);
   };
-  //프로젝트 선택 시 제목
-  const selectedTitle = project_array.map(v => v.title);
-  //제목에 맞는 거 찾아오기
-  const show_project = project_array.find(v => v.title === firstTitle);
+
+  const selectedTitle = projectData.map((v: ProjectType) => v.title);
+
+  const show_project = projectData.find(
+    (v: ProjectType) => v.title === firstTitle,
+  );
 
   return (
     <div className={css.project} id="ProjectPage">
       <div className={css.pj_top}>
-        {/* 이게 위의 제목들 */}
         {selectedTitle.map((title, index) => (
-          // 제목이 선택되면 selected 발동 아니면 ''
           <h4
             key={index}
             onClick={() => clickTitle(title)}
@@ -34,7 +32,6 @@ export default function Project() {
 
       <div className={css.pj_mid}>
         <div>
-          {/* 데이터가 선택이 됐으면 ?  내용 : 프젝 선택하라 */}
           {show_project ? (
             <div className={css.pj_mid_left}>
               <h2 className={css.show_project_title}>
@@ -69,7 +66,6 @@ export default function Project() {
           )}
         </div>
 
-        {/* 데이터가 선택이 됐으면 ?  내용 : 프젝 선택하라 */}
         {show_project ? (
           <div className={css.pj_mid_right}>
             <div className={css.right}>
@@ -82,11 +78,7 @@ export default function Project() {
               <p className={css.showData_p}>📍개발기간</p>{' '}
               <p className={css.showData_p2}>{show_project.period}</p>
             </div>
-            {/* <div className={css.right}>
-              {' '}
-              <p className={css.showData_p}>📍플랫폼</p>{' '}
-              <p className={css.showData_p2}>{show_project.platform}</p>
-            </div> */}
+
             <div className={css.right}>
               {' '}
               <p className={css.showData_p}>📍개발인원</p>{' '}

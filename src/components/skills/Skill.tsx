@@ -1,4 +1,4 @@
-import '../style/Skills.css';
+import '../../style/Skills.css';
 import {RiHtml5Fill} from 'react-icons/ri';
 import {IoLogoCss3} from 'react-icons/io';
 import {FaSquareJs} from 'react-icons/fa6';
