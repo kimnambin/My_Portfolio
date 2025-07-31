@@ -67,10 +67,10 @@ export const infoData: infoType[] = [
     description: 'mkkim044@naver.com',
   },
   {
-    href: 'https://caramel-battery-b53.notion.site/113d9d07eb6f806db65dc7093790088d',
+    href: null,
     icon: <PiFileText className="icons" />,
     title: '이력서',
-    description: '이력서 보기',
+    description: '이력서 준비중...',
   },
   {
     href: null,

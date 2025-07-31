@@ -4,7 +4,8 @@
   margin: 5% auto 5% auto;
   width: 70%;
   border: 1px solid #131230;
-  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   aspect-ratio: 16 / 9;
 }
 
@@ -80,16 +81,12 @@ article p {
 }
 
 .section:hover {
-  transform: scale(1.25);
   cursor: pointer;
-  border: 1px solid grey;
-  border-radius: 15px;
+  color: #315288;
 }
 
 .footer {
   margin: 0;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
 
 .footer h2 {
@@ -108,8 +105,6 @@ article p {
   grid-template-columns: repeat(3, 1fr);
   margin: 0;
   border: 1px solid black;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
 
 .award_tree {
@@ -163,10 +158,6 @@ article p {
 .section_right span {
   text-decoration: underline;
   font-weight: 700;
-}
-
-.section_right span:hover {
-  color: white;
 }
 
 /* 반응형 웹 */
