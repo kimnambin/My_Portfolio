@@ -6,7 +6,7 @@ export default function Profile() {
   return (
     <div className="container" id="ProfilePage">
       <header>
-        <h3>👑김남빈👑</h3>
+        <h3>김남빈</h3>
         <aside>
           <p>학여불급의 자세로 끈질기게 목표를 달성하는</p>
           <strong>신입 프론트엔드 개발자</strong>

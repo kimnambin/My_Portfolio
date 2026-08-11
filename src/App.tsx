@@ -8,7 +8,7 @@ const Project = lazy(() => import('./pages/Project'));
 function App() {
   return (
     <>
-      <Suspense fallback={<div>⌛Loading...</div>}>
+      <Suspense fallback={<div>Loading...</div>}>
         <TopNav />
         <Profile />
         <Skill />

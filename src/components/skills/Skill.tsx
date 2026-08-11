@@ -14,7 +14,7 @@ export default function Skill() {
     <div>
       <div className="full_skill" id="SkillPage">
         <div className="skill_title">
-          <h2 className="title_h2">💻SKILLS</h2>
+          <h2 className="title_h2">Skills</h2>
         </div>
         <div className="skill">
           <div className="My_skills">

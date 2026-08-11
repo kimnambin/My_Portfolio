@@ -40,7 +40,7 @@ export default function Project() {
                     href={show_project.link}
                     target="_blank"
                     rel="noopener noreferrer">
-                    🌐보러가기
+                    보러가기 ↗
                   </a>
                 ) : (
                   show_project.title
@@ -70,28 +70,28 @@ export default function Project() {
           <div className={css.pj_mid_right}>
             <div className={css.right}>
               {' '}
-              <p className={css.showData_p}>📍소개&기능</p>
+              <p className={css.showData_p}>소개 & 기능</p>
               <p className={css.showData_p2}>{show_project.intro}</p>
             </div>
             <div className={css.right}>
               {' '}
-              <p className={css.showData_p}>📍개발기간</p>{' '}
+              <p className={css.showData_p}>개발 기간</p>{' '}
               <p className={css.showData_p2}>{show_project.period}</p>
             </div>
 
             <div className={css.right}>
               {' '}
-              <p className={css.showData_p}>📍개발인원</p>{' '}
+              <p className={css.showData_p}>개발 인원</p>{' '}
               <p className={css.showData_p2}>{show_project.personnel}</p>
             </div>
             <div className={css.right}>
               {' '}
-              <p className={css.showData_p}>📍사용 기술</p>{' '}
+              <p className={css.showData_p}>사용 기술</p>{' '}
               <p className={css.showData_p3}>{show_project.skill}</p>
             </div>
             <div className={css.right}>
               {' '}
-              <p className={css.showData_p}>📍깃허브</p>
+              <p className={css.showData_p}>깃허브</p>
               <div style={{width: '100%'}}>
                 <img
                   className={css.SNS_img5}
@@ -104,7 +104,7 @@ export default function Project() {
             </div>
             <div className={css.right}>
               {' '}
-              <p className={css.showData_p}>📍나의역할</p>{' '}
+              <p className={css.showData_p}>나의 역할</p>{' '}
               <ul className={css.showData_p4}>
                 {show_project.role.map(v => (
                   <li key={v}>{v}</li>
